@@ -70,7 +70,7 @@ export default function Contact() {
 
           <aside className="card info">
             <h3>Get in touch</h3>
-            <p><strong>Email</strong><br />hello@shieldwise.example</p>
+            <p><strong>Email</strong><br />hello@cuttinedge.example</p>
             <p><strong>Phone</strong><br />+00 000 000 0000</p>
             <p><strong>Hours</strong><br />Mon–Sat, 9am – 6pm</p>
             <p><strong>Office</strong><br />123 Business Avenue, Your City</p>

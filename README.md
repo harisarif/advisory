@@ -1,4 +1,4 @@
-# ShieldWise – Insurance & Advisory (React + Vite)
+# Cuttin Edge Advisory Ltd – Insurance & Advisory (React + Vite)
 
 A responsive insurance advisory website built with React 18, Vite and React Router.
 
@@ -25,9 +25,9 @@ npm run preview
 ```bash
 git init
 git add .
-git commit -m "Initial commit: ShieldWise insurance advisory site"
+git commit -m "Initial commit: Cuttin Edge Advisory Ltd insurance advisory site"
 git branch -M main
-git remote add origin https://github.com/<your-username>/shieldwise.git
+git remote add origin https://github.com/<your-username>/cuttin-edge-advisory.git
 git push -u origin main
 ```
 

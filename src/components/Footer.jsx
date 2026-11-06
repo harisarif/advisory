@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <div className="brand brand-light">
             <img src="/favicon.svg" alt="" width="28" height="28" />
-            <span>ShieldWise</span>
+            <span>Cuttin Edge Advisory Ltd</span>
           </div>
           <p className="muted-light">
             Independent insurance advisory. Clear advice, fair prices and support when it matters.
@@ -22,13 +22,13 @@ export default function Footer() {
         </div>
         <div>
           <h4>Contact</h4>
-          <span>hello@shieldwise.example</span>
+          <span>hello@cuttinedge.example</span>
           <span>+00 000 000 0000</span>
           <span>Mon–Sat, 9am – 6pm</span>
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} ShieldWise. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} Cuttin Edge Advisory Ltd. All rights reserved.</span>
         <span>Demo website. Premium figures are illustrative, not an offer of insurance.</span>
       </div>
     </footer>
