@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="container nav-inner">
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
           <img src="/favicon.svg" alt="" width="32" height="32" />
-          <span>Cuttin Edge Advisory Ltd</span>
+          <span>Cutting Edge Advisory Ltd</span>
         </Link>
 
         <button

@@ -19,7 +19,7 @@ export default function About() {
         <div className="container">
           <span className="eyebrow">About us</span>
           <h1>Insurance advice built on trust</h1>
-          <p>We started Cuttin Edge Advisory Ltd because buying insurance shouldn’t feel confusing or pushy.</p>
+          <p>We started Cutting Edge Advisory Ltd because buying insurance shouldn’t feel confusing or pushy.</p>
         </div>
       </section>
 
