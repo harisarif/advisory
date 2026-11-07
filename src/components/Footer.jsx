@@ -26,7 +26,6 @@ export default function Footer() {
         </div>
         <div>
           <h4>Contact</h4>
-          <a href={waLink()} target="_blank" rel="noreferrer"><Icon name="whatsapp" size={16} /> {company.phoneDisplay} (WhatsApp)</a>
           <a href={`tel:${company.phoneTel}`}><Icon name="phone" size={16} /> {company.phoneDisplay}</a>
           <a href={`mailto:${company.email}`}><Icon name="mail" size={16} /> {company.email}</a>
         </div>
