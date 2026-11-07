@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import Icon from './Icon.jsx'
+import { company, waLink } from '../config.js'
 
 export default function Footer() {
   return (
@@ -6,30 +8,32 @@ export default function Footer() {
       <div className="container footer-grid">
         <div>
           <div className="brand brand-light">
-            <img src="/favicon.svg" alt="" width="28" height="28" />
-            <span>Cutting Edge Advisory Ltd</span>
+            <img src="/favicon.svg" alt="" width="40" height="40" />
+            <span className="brand-text">
+              <b>CUTTING EDGE</b>
+              <small>ADVISORY LTD</small>
+            </span>
           </div>
-          <p className="muted-light">
-            Independent insurance advisory. Clear advice, fair prices and support when it matters.
-          </p>
+          <p className="muted-light">{company.tagline}</p>
+          <p className="muted-light">Insurance consultancy. Driving you forward, solving what matters.</p>
         </div>
         <div>
-          <h4>Explore</h4>
-          <Link to="/plans">Insurance Plans</Link>
-          <Link to="/advisory">Advisory</Link>
-          <Link to="/calculator">Premium Calculator</Link>
-          <Link to="/about">About Us</Link>
+          <h4>Services</h4>
+          <Link to="/services">Cheap Car Insurance</Link>
+          <Link to="/services">CBT for Motorbike Riders</Link>
+          <Link to="/services">Uber Conversion</Link>
+          <Link to="/services">Speeding Ticket Appeals</Link>
         </div>
         <div>
           <h4>Contact</h4>
-          <span>hello@cuttingedge.example</span>
-          <span>+00 000 000 0000</span>
-          <span>Mon–Sat, 9am – 6pm</span>
+          <a href={waLink()} target="_blank" rel="noreferrer"><Icon name="whatsapp" size={16} /> {company.phoneDisplay} (WhatsApp)</a>
+          <a href={`tel:${company.phoneTel}`}><Icon name="phone" size={16} /> {company.phoneDisplay}</a>
+          <a href={`mailto:${company.email}`}><Icon name="mail" size={16} /> {company.email}</a>
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} Cutting Edge Advisory Ltd. All rights reserved.</span>
-        <span>Demo website. Premium figures are illustrative, not an offer of insurance.</span>
+        <span>© {new Date().getFullYear()} {company.name}. All rights reserved.</span>
+        <span>Insurance is provided by third-party insurers. Quotes and eligibility are subject to checks.</span>
       </div>
     </footer>
   )

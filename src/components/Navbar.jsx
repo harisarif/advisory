@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import Icon from './Icon.jsx'
+import { waLink } from '../config.js'
 
 const links = [
   { to: '/', label: 'Home' },
-  { to: '/plans', label: 'Insurance Plans' },
-  { to: '/advisory', label: 'Advisory' },
-  { to: '/calculator', label: 'Calculator' },
+  { to: '/services', label: 'Services' },
   { to: '/about', label: 'About' },
+  { to: '/contact', label: 'Contact' },
 ]
 
 export default function Navbar() {
@@ -16,8 +17,11 @@ export default function Navbar() {
     <header className="nav">
       <div className="container nav-inner">
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
-          <img src="/favicon.svg" alt="" width="32" height="32" />
-          <span>Cutting Edge Advisory Ltd</span>
+          <img src="/favicon.svg" alt="" width="40" height="40" />
+          <span className="brand-text">
+            <b>CUTTING EDGE</b>
+            <small>ADVISORY LTD</small>
+          </span>
         </Link>
 
         <button
@@ -41,9 +45,9 @@ export default function Navbar() {
               {l.label}
             </NavLink>
           ))}
-          <Link to="/contact" className="btn btn-gold" onClick={() => setOpen(false)}>
-            Free Consultation
-          </Link>
+          <a href={waLink()} target="_blank" rel="noreferrer" className="btn btn-gold" onClick={() => setOpen(false)}>
+            <Icon name="whatsapp" size={18} /> WhatsApp Us
+          </a>
         </nav>
       </div>
     </header>

@@ -1,8 +1,9 @@
-# Cutting Edge Advisory Ltd – Insurance & Advisory (React + Vite)
+# Cutting Edge Advisory Ltd – Website (React + Vite)
 
-A responsive insurance advisory website built with React 18, Vite and React Router.
+Insurance consultancy website: cheap car insurance (all licence types), CBT for motorbike riders,
+Uber / Deliveroo / Just Eat conversion, speeding ticket appeals and platform issue support.
 
-**Pages:** Home, Insurance Plans (filterable), Advisory, Premium Calculator, About, Contact (lead form).
+**Pages:** Home, Services, About, Contact. A floating WhatsApp button appears on every page.
 
 ## Run locally
 
@@ -10,8 +11,6 @@ A responsive insurance advisory website built with React 18, Vite and React Rout
 npm install
 npm run dev
 ```
-
-Open http://localhost:5173
 
 ## Build
 
@@ -25,7 +24,7 @@ npm run preview
 ```bash
 git init
 git add .
-git commit -m "Initial commit: Cutting Edge Advisory Ltd insurance advisory site"
+git commit -m "Initial commit: Cutting Edge Advisory Ltd website"
 git branch -M main
 git remote add origin https://github.com/<your-username>/cutting-edge-advisory.git
 git push -u origin main
@@ -34,18 +33,14 @@ git push -u origin main
 ## Deploy on Vercel
 
 1. Go to https://vercel.com/new and import the GitHub repository.
-2. Framework preset: **Vite** (auto-detected). Build command: `npm run build`, output: `dist`.
+2. Framework preset: **Vite** (auto-detected). Build command `npm run build`, output `dist`.
 3. Click **Deploy**.
 
-`vercel.json` already rewrites all routes to `index.html`, so page refreshes on `/plans`, `/contact`, etc. work.
+`vercel.json` rewrites all routes to `index.html`, so refreshing `/services`, `/contact`, etc. works.
 
 ## Customise
 
-- Content (plans, advisory, FAQs, testimonials): `src/data.js`
-- Colours and styling: CSS variables at the top of `src/index.css`
-- Contact form: currently logs to the console. Connect it to Formspree, EmailJS or your own API in `src/pages/Contact.jsx`.
-- Calculator: `src/pages/Calculator.jsx` uses illustrative formulas only. Replace with real insurer rates before using in production.
-
-## Note
-
-All names, contact details and figures are placeholders for demo purposes.
+- Phone, WhatsApp, email, company name: `src/config.js`
+- Services, FAQs, steps: `src/data.js`
+- Colours: CSS variables at the top of `src/index.css`
+- Contact form: opens WhatsApp (or email) with the details pre-filled. No backend needed.

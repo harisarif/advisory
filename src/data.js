@@ -1,89 +1,87 @@
-export const plans = [
+export const services = [
   {
-    id: 'life',
-    icon: '🛡️',
-    name: 'Life Insurance',
-    tagline: 'Protect the people who depend on you.',
-    from: 450,
-    features: ['Term & whole-life options', 'Critical illness rider', 'Tax-efficient payouts', 'Cover up to 2 crore'],
+    id: 'car-insurance',
+    icon: 'car',
+    featured: true,
+    title: 'Cheap Car Insurance',
+    subtitle: 'With all kinds of licences',
+    text: 'We compare cover through trusted insurance partners to find a policy that suits your licence, your car and your budget.',
+    points: ['Affordable premiums', 'All licence types accepted', 'Quick & hassle-free process', 'Trusted insurance partners'],
+    badges: ['Best coverage', 'Best price', 'Total peace of mind'],
   },
   {
-    id: 'health',
-    icon: '❤️',
-    name: 'Health Insurance',
-    tagline: 'Cashless care when you need it most.',
-    from: 600,
-    features: ['Individual & family floater', 'Cashless at 9,000+ hospitals', 'No-claim bonus', 'Day-care & maternity cover'],
+    id: 'cbt',
+    icon: 'bike',
+    title: 'CBT for Motorbike Riders',
+    subtitle: 'Compulsory Basic Training',
+    text: 'Compulsory Basic Training for motorbike learners, delivered by certified instructors at times that suit you.',
+    points: ['Certified instructors', 'Flexible timings', 'Pass with confidence'],
   },
   {
-    id: 'motor',
-    icon: '🚗',
-    name: 'Motor Insurance',
-    tagline: 'Drive with confidence, claim with ease.',
-    from: 300,
-    features: ['Comprehensive & third-party', 'Zero-depreciation add-on', '24/7 roadside assistance', 'Instant policy issuance'],
+    id: 'conversion',
+    icon: 'convert',
+    title: 'Uber Conversion',
+    subtitle: 'From cycle to motorbike and car',
+    text: 'Convert your cycle or motorbike delivery account to a car or motorbike and start earning more on your platform.',
+    points: ['Uber', 'Deliveroo', 'Just Eat', 'Other platforms'],
   },
   {
-    id: 'home',
-    icon: '🏠',
-    name: 'Home Insurance',
-    tagline: 'Guard your biggest investment.',
-    from: 250,
-    features: ['Structure & contents cover', 'Fire, flood & theft', 'Alternate accommodation', 'Valuables add-on'],
+    id: 'appeals',
+    icon: 'camera',
+    title: 'Appeal Speeding Camera Tickets',
+    subtitle: 'Save points & money',
+    text: 'We handle your appeal and help you protect your licence and your wallet.',
+    points: ['Expert appeal writers', 'Fast & reliable service', 'Clear steps from start to finish'],
   },
   {
-    id: 'travel',
-    icon: '✈️',
-    name: 'Travel Insurance',
-    tagline: 'Wander further, worry less.',
-    from: 150,
-    features: ['Medical emergencies abroad', 'Trip delay & cancellation', 'Baggage loss cover', 'Single & annual plans'],
-  },
-  {
-    id: 'business',
-    icon: '💼',
-    name: 'Business Insurance',
-    tagline: 'Keep your company resilient.',
-    from: 900,
-    features: ['Property & liability', 'Cyber risk cover', 'Employee group health', 'Business interruption'],
+    id: 'platform-support',
+    icon: 'headset',
+    title: 'Platform Issue Support',
+    subtitle: 'Uber, Deliveroo, Just Eat & more',
+    text: 'Stuck with a problem on a delivery or ride-hailing platform? We help you get it sorted.',
+    points: ['Account problems', 'Documents', 'Insurance', 'BV checks', 'Deactivation'],
   },
 ]
 
-export const advisory = [
-  {
-    title: 'Needs Analysis',
-    text: 'We map your income, dependants, debts and goals to work out exactly how much cover you actually need.',
-  },
-  {
-    title: 'Policy Review',
-    text: 'Already insured? We audit existing policies for gaps, overlaps and overpriced premiums.',
-  },
-  {
-    title: 'Claims Support',
-    text: 'From paperwork to follow-ups, our team stands beside you until the claim is settled.',
-  },
-  {
-    title: 'Financial Planning',
-    text: 'Blend protection with savings and investment goals for a plan that supports every life stage.',
-  },
+export const pillars = [
+  { icon: 'shield', title: 'Reliable', text: 'Trusted & secure services' },
+  { icon: 'tag', title: 'Affordable', text: 'Best prices, maximum value' },
+  { icon: 'headset', title: 'Professional', text: 'Experienced team, excellent support' },
+]
+
+export const strip = [
+  { icon: 'bolt', title: 'Fast response', text: 'Quick reply & effective solutions' },
+  { icon: 'doc', title: 'Transparent process', text: 'Honest advice, clear steps, no hidden charges' },
+  { icon: 'user', title: 'Expert consultation', text: 'Experienced & qualified professionals' },
+  { icon: 'lock', title: '100% confidential', text: 'Your information is safe with us' },
 ]
 
 export const steps = [
-  { n: '01', title: 'Tell us about you', text: 'A quick 15-minute conversation or online form.' },
-  { n: '02', title: 'We compare the market', text: 'Quotes from multiple insurers, side by side.' },
-  { n: '03', title: 'You choose with clarity', text: 'Honest advice, no jargon and no pressure.' },
-  { n: '04', title: 'We stay with you', text: 'Renewals, changes and claims handled for life.' },
-]
-
-export const testimonials = [
-  { name: 'Ayesha K.', role: 'Freelance designer', quote: 'They found me a health plan that was cheaper and covered more. The claim process was painless.' },
-  { name: 'Rohan M.', role: 'Small business owner', quote: 'Finally someone explained policies in plain language. I saved a lot by removing duplicate cover.' },
-  { name: 'Sana & Imran', role: 'Young parents', quote: 'Our advisor built a life and health plan around our budget. We feel genuinely protected.' },
+  { n: '01', title: 'Message us', text: 'WhatsApp, call or fill in the form with what you need.' },
+  { n: '02', title: 'We review your case', text: 'We check your licence, vehicle or platform situation.' },
+  { n: '03', title: 'Clear options', text: 'You get honest advice and a clear price, no pressure.' },
+  { n: '04', title: 'We get it done', text: 'We handle the paperwork and keep you updated.' },
 ]
 
 export const faqs = [
-  { q: 'Is your advice really independent?', a: 'Yes. We compare policies from multiple insurers and recommend what fits you, not what pays us the most.' },
-  { q: 'Does the advisory consultation cost anything?', a: 'Your first consultation is free. We are paid by insurers only when you choose to buy through us.' },
-  { q: 'Can you review a policy I already have?', a: 'Absolutely. Share your policy documents and we will highlight gaps, overlaps and savings.' },
-  { q: 'How fast can I get covered?', a: 'Many motor, travel and health plans can be issued the same day once documents are verified.' },
+  {
+    q: 'Can you arrange car insurance if I hold a foreign or provisional licence?',
+    a: 'We work with partners who accept many licence types. Message us your licence details and we will look at the options available to you.',
+  },
+  {
+    q: 'What is a CBT and do I need one?',
+    a: 'Compulsory Basic Training (CBT) is required before riding a moped or motorbike on UK roads as a learner. Contact us to book a session.',
+  },
+  {
+    q: 'What does Uber conversion involve?',
+    a: 'It means changing your delivery or ride account, for example from cycle to motorbike or car. We guide you through the documents and steps required.',
+  },
+  {
+    q: 'Can you help me appeal a speeding camera ticket?',
+    a: 'Yes. Our appeal writers review your notice and prepare your appeal. We cannot guarantee an outcome, but we will tell you honestly whether it is worth appealing.',
+  },
+  {
+    q: 'How quickly will you reply?',
+    a: 'WhatsApp is the fastest way to reach us. We aim to reply as soon as possible during working hours.',
+  },
 ]

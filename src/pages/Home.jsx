@@ -1,72 +1,43 @@
 import { Link } from 'react-router-dom'
-import PlanCard from '../components/PlanCard.jsx'
+import Icon from '../components/Icon.jsx'
+import ServiceCard from '../components/ServiceCard.jsx'
 import Faq from '../components/Faq.jsx'
-import { plans, advisory, steps, testimonials } from '../data.js'
+import { services, pillars, strip, steps } from '../data.js'
+import { company, waLink } from '../config.js'
 
 export default function Home() {
+  const top = services[0]
+  const others = services.slice(1)
+
   return (
     <>
       <section className="hero">
         <div className="container hero-inner">
-          <div className="hero-text">
-            <span className="pill">Independent insurance advisors</span>
-            <h1>Coverage that fits your life, not the other way round.</h1>
+          <div>
+            <span className="pill">Insurance consultancy</span>
+            <h1>
+              Smart solutions for <em>smarter driving.</em>
+            </h1>
             <p>
-              We compare plans from leading insurers and give you honest, personalised advice, so you
-              pay for the protection you need and nothing you don’t.
+              {company.name} helps drivers and riders with affordable car insurance, CBT training,
+              platform conversions and speeding ticket appeals. {company.tagline}
             </p>
             <div className="hero-cta">
-              <Link to="/contact" className="btn btn-gold">Book a free consultation</Link>
-              <Link to="/calculator" className="btn btn-ghost">Estimate my premium</Link>
-            </div>
-            <div className="stats">
-              <div><strong>25k+</strong><span>Families advised</span></div>
-              <div><strong>98%</strong><span>Claims supported</span></div>
-              <div><strong>30+</strong><span>Insurer partners</span></div>
+              <a href={waLink('Hello, I would like a car insurance quote.')} target="_blank" rel="noreferrer" className="btn btn-gold">
+                <Icon name="whatsapp" size={20} /> WhatsApp {company.phoneDisplay}
+              </a>
+              <Link to="/services" className="btn btn-ghost">View our services</Link>
             </div>
           </div>
-          <div className="hero-card card">
-            <h3>Quick quote</h3>
-            <p className="muted">Tell us what you’d like to protect.</p>
-            <div className="chips">
-              {plans.slice(0, 4).map((p) => (
-                <Link key={p.id} to="/contact" state={{ interest: p.name }} className="chip">
-                  <span>{p.icon}</span> {p.name.replace(' Insurance', '')}
-                </Link>
-              ))}
-            </div>
-            <Link to="/contact" className="btn btn-primary block">Get started</Link>
-          </div>
-        </div>
-      </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">Insurance plans</span>
-            <h2>Protection for every part of life</h2>
-            <p className="muted">Compare options across leading insurers in one place.</p>
-          </div>
-          <div className="grid grid-3">
-            {plans.slice(0, 3).map((p) => <PlanCard key={p.id} plan={p} />)}
-          </div>
-          <div className="center mt">
-            <Link to="/plans" className="btn btn-outline">View all plans</Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section alt">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">Advisory services</span>
-            <h2>Advice you can actually trust</h2>
-          </div>
-          <div className="grid grid-4">
-            {advisory.map((a) => (
-              <div key={a.title} className="card">
-                <h3>{a.title}</h3>
-                <p className="muted">{a.text}</p>
+          <div className="pillars">
+            {pillars.map((p) => (
+              <div key={p.title} className="pillar">
+                <span className="round"><Icon name={p.icon} size={26} /></span>
+                <div>
+                  <h3>{p.title}</h3>
+                  <p>{p.text}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -75,9 +46,69 @@ export default function Home() {
 
       <section className="section">
         <div className="container">
+          <div className="feature">
+            <div className="feature-body">
+              <span className="ribbon">Our top service</span>
+              <div className="feature-title">
+                <span className="shield"><Icon name="car" size={44} /></span>
+                <div>
+                  <h2>Cheap car <span className="gold">insurance</span></h2>
+                  <span className="white-pill">With all kinds of licences</span>
+                </div>
+              </div>
+              <ul className="ticks light">
+                {top.points.map((p) => (
+                  <li key={p}><Icon name="check" size={18} /> {p}</li>
+                ))}
+              </ul>
+              <div className="badges">
+                {top.badges.map((b) => <span key={b}>{b}</span>)}
+              </div>
+              <div className="hero-cta">
+                <a href={waLink('Hello, I would like a car insurance quote.')} target="_blank" rel="noreferrer" className="btn btn-gold">
+                  <Icon name="whatsapp" size={20} /> Get a quote on WhatsApp
+                </a>
+                <Link to="/contact" state={{ service: top.title }} className="btn btn-ghost">Request a call back</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section alt">
+        <div className="container">
+          <div className="section-head">
+            <span className="eyebrow">Our services</span>
+            <h2>How we can help you</h2>
+            <p className="muted">From insurance to platform support, we handle the paperwork so you can get on the road.</p>
+          </div>
+          <div className="grid grid-2">
+            {others.map((s) => <ServiceCard key={s.id} service={s} />)}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="strip">
+            {strip.map((s) => (
+              <div key={s.title} className="strip-item">
+                <Icon name={s.icon} size={30} />
+                <div>
+                  <h4>{s.title}</h4>
+                  <p>{s.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section alt">
+        <div className="container">
           <div className="section-head">
             <span className="eyebrow">How it works</span>
-            <h2>Covered in four simple steps</h2>
+            <h2>Simple from start to finish</h2>
           </div>
           <div className="grid grid-4">
             {steps.map((s) => (
@@ -86,23 +117,6 @@ export default function Home() {
                 <h3>{s.title}</h3>
                 <p className="muted">{s.text}</p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section alt">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">Testimonials</span>
-            <h2>People we’ve helped</h2>
-          </div>
-          <div className="grid grid-3">
-            {testimonials.map((t) => (
-              <figure key={t.name} className="card quote">
-                <blockquote>“{t.quote}”</blockquote>
-                <figcaption><strong>{t.name}</strong><span>{t.role}</span></figcaption>
-              </figure>
             ))}
           </div>
         </div>
@@ -119,11 +133,13 @@ export default function Home() {
       </section>
 
       <section className="cta">
-        <div className="container cta-inner">
-          <h2>Ready to find the right cover?</h2>
-          <p>Speak with an advisor today. It’s free and there’s no obligation.</p>
-          <Link to="/contact" className="btn btn-gold">Talk to an advisor</Link>
+        <div className="cta-left">
+          <h2>Please contact {company.contactPerson} on WhatsApp</h2>
+          <p>Fast response. Real support.</p>
         </div>
+        <a href={waLink()} target="_blank" rel="noreferrer" className="cta-right cta-number">
+          <Icon name="whatsapp" size={34} /> {company.phoneDisplay}
+        </a>
       </section>
     </>
   )
