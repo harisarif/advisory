@@ -8,11 +8,11 @@ export default function Services() {
         <div className="container">
           <span className="eyebrow">Our services</span>
           <h1>Advice to protect and grow your business</h1>
-          <p>Insurance advisory, new business advisory and business resourcing, all from one team.</p>
+          <p>Insurance advisory and business resourcing consultancy, all from one team.</p>
         </div>
       </section>
       <section className="section">
-        <div className="container grid grid-3">
+        <div className="container grid grid-2">
           {services.map((s) => <ServiceCard key={s.id} service={s} />)}
         </div>
       </section>

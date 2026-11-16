@@ -82,6 +82,7 @@ ul { list-style: none; }
 .round.wa { background: var(--wa); border-color: var(--wa); color: #fff; }
 
 /* Feature panel */
+.feature-stack { display: grid; gap: 2.4rem; }
 .feature { background: linear-gradient(135deg, var(--navy), var(--navy-2)); border: 2px solid var(--gold); border-radius: 22px; padding: 2.6rem; position: relative; color: #fff; box-shadow: var(--shadow); }
 .ribbon { position: absolute; top: -14px; left: 2.2rem; background: var(--gold); color: var(--navy); font-weight: 800; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; padding: .4rem 1rem; border-radius: 6px; }
 .feature-title { display: flex; gap: 1.5rem; align-items: center; margin-bottom: 1.5rem; }

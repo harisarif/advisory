@@ -1,6 +1,6 @@
 # Cutting Edge Advisory Ltd – Website (React + Vite)
 
-Advisory website: insurance advisory, new business advisory and business resourcing consultancy.
+Advisory website: insurance advisory and business resourcing consultancy.
 
 **Pages:** Home, Services, About, Contact. A floating WhatsApp button appears on every page.
 

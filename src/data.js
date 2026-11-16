@@ -10,20 +10,13 @@ export const services = [
     badges: ['Clear advice', 'Right cover', 'Total peace of mind'],
   },
   {
-    id: 'new-business-advisory',
-    icon: 'chart',
-    title: 'New Business Advisory',
-    subtitle: 'Start and grow with confidence',
-    text: 'Practical guidance for new and growing businesses, from first setup to the decisions that help you grow.',
-    points: ['Business set-up guidance', 'Planning and cost advice', 'Insurance and risk basics', 'Growth and next-step strategy'],
-  },
-  {
     id: 'business-resourcing',
     icon: 'briefcase',
     title: 'Business Resourcing Consultant',
     subtitle: 'The right people and resources for your business',
-    text: 'We help you work out what your business needs and how to source it, so you can build a strong team without wasting time or money.',
-    points: ['Workforce and resource planning', 'Recruitment and staffing support', 'Contractors and outsourced resources', 'Cost-effective resourcing plans'],
+    text: 'We help new and growing businesses work out what they need and how to source it, so you can build a strong team without wasting time or money.',
+    points: ['Workforce and resource planning', 'Recruitment and staffing support', 'Contractors and outsourced resources', 'Guidance for new and growing businesses'],
+    badges: ['Right people', 'Right plan', 'Room to grow'],
   },
 ]
 
@@ -54,7 +47,7 @@ export const faqs = [
   },
   {
     q: 'I am starting a new business. How can you help?',
-    a: 'We guide you through the key early decisions, including planning, costs, risks and insurance, so you start on a solid footing.',
+    a: 'We help you plan the people and resources you need, and advise on insurance and risk, so you start on a solid footing.',
   },
   {
     q: 'What is business resourcing consultancy?',

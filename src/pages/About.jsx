@@ -18,8 +18,8 @@ export default function About() {
         <div className="container narrow about-text">
           <p>
             {company.name} is an advisory firm that helps individuals and businesses make
-            confident decisions. We provide insurance advisory, guidance for new businesses, and
-            business resourcing consultancy to help you find the people and resources you need.
+            confident decisions. We provide insurance advisory and business resourcing
+            consultancy to help you protect your business and find the people and resources you need.
           </p>
           <p>
             We believe in honest advice, clear steps and no hidden charges. Whatever you need, our
