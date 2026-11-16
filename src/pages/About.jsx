@@ -17,15 +17,13 @@ export default function About() {
       <section className="section">
         <div className="container narrow about-text">
           <p>
-            {company.name} is an insurance consultancy that helps drivers, riders and delivery
-            partners with the things that matter on the road. We find affordable car insurance for
-            all kinds of licences, arrange CBT training for new motorbike riders, support
-            Uber, Deliveroo and Just Eat account conversions, and prepare appeals against speeding
-            camera tickets.
+            {company.name} is an advisory firm that helps individuals and businesses make
+            confident decisions. We provide insurance advisory, guidance for new businesses, and
+            business resourcing consultancy to help you find the people and resources you need.
           </p>
           <p>
-            We believe in honest advice, clear steps and no hidden charges. Whatever the issue,
-            our goal is to give you a fast reply and a real solution.
+            We believe in honest advice, clear steps and no hidden charges. Whatever you need, our
+            goal is to give you a fast reply and a practical solution.
           </p>
         </div>
       </section>

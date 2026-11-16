@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Icon from './Icon.jsx'
+import { services } from '../data.js'
 import { company, waLink } from '../config.js'
 
 export default function Footer() {
@@ -15,17 +16,17 @@ export default function Footer() {
             </span>
           </div>
           <p className="muted-light">{company.tagline}</p>
-          <p className="muted-light">Insurance consultancy. Driving you forward, solving what matters.</p>
+          <p className="muted-light">Insurance and business advisory. Solving what matters.</p>
         </div>
         <div>
           <h4>Services</h4>
-          <Link to="/services">Cheap Car Insurance</Link>
-          <Link to="/services">CBT for Motorbike Riders</Link>
-          <Link to="/services">Uber Conversion</Link>
-          <Link to="/services">Speeding Ticket Appeals</Link>
+          {services.map((s) => (
+            <Link key={s.id} to="/services">{s.title}</Link>
+          ))}
         </div>
         <div>
           <h4>Contact</h4>
+          <a href={waLink()} target="_blank" rel="noreferrer"><Icon name="whatsapp" size={16} /> {company.phoneDisplay} (WhatsApp)</a>
           <a href={`tel:${company.phoneTel}`}><Icon name="phone" size={16} /> {company.phoneDisplay}</a>
           <a href={`mailto:${company.email}`}><Icon name="mail" size={16} /> {company.email}</a>
         </div>

@@ -1,45 +1,29 @@
 export const services = [
   {
-    id: 'car-insurance',
-    icon: 'car',
+    id: 'insurance-advisory',
+    icon: 'shield',
     featured: true,
-    title: 'Cheap Car Insurance',
-    subtitle: 'With all kinds of licences',
-    text: 'We compare cover through trusted insurance partners to find a policy that suits your licence, your car and your budget.',
-    points: ['Affordable premiums', 'All licence types accepted', 'Quick & hassle-free process', 'Trusted insurance partners'],
-    badges: ['Best coverage', 'Best price', 'Total peace of mind'],
+    title: 'Insurance Advisory',
+    subtitle: 'Independent guidance on the right cover',
+    text: 'We explain your options in plain language and help you choose insurance that fits your needs and budget, with support through renewals and claims.',
+    points: ['Needs and risk assessment', 'Policy reviews and comparisons', 'Trusted insurance partners', 'Support at renewal and claims'],
+    badges: ['Clear advice', 'Right cover', 'Total peace of mind'],
   },
   {
-    id: 'cbt',
-    icon: 'bike',
-    title: 'CBT for Motorbike Riders',
-    subtitle: 'Compulsory Basic Training',
-    text: 'Compulsory Basic Training for motorbike learners, delivered by certified instructors at times that suit you.',
-    points: ['Certified instructors', 'Flexible timings', 'Pass with confidence'],
+    id: 'new-business-advisory',
+    icon: 'chart',
+    title: 'New Business Advisory',
+    subtitle: 'Start and grow with confidence',
+    text: 'Practical guidance for new and growing businesses, from first setup to the decisions that help you grow.',
+    points: ['Business set-up guidance', 'Planning and cost advice', 'Insurance and risk basics', 'Growth and next-step strategy'],
   },
   {
-    id: 'conversion',
-    icon: 'convert',
-    title: 'Uber Conversion',
-    subtitle: 'From cycle to motorbike and car',
-    text: 'Convert your cycle or motorbike delivery account to a car or motorbike and start earning more on your platform.',
-    points: ['Uber', 'Deliveroo', 'Just Eat', 'Other platforms'],
-  },
-  {
-    id: 'appeals',
-    icon: 'camera',
-    title: 'Appeal Speeding Camera Tickets',
-    subtitle: 'Save points & money',
-    text: 'We handle your appeal and help you protect your licence and your wallet.',
-    points: ['Expert appeal writers', 'Fast & reliable service', 'Clear steps from start to finish'],
-  },
-  {
-    id: 'platform-support',
-    icon: 'headset',
-    title: 'Platform Issue Support',
-    subtitle: 'Uber, Deliveroo, Just Eat & more',
-    text: 'Stuck with a problem on a delivery or ride-hailing platform? We help you get it sorted.',
-    points: ['Account problems', 'Documents', 'Insurance', 'BV checks', 'Deactivation'],
+    id: 'business-resourcing',
+    icon: 'briefcase',
+    title: 'Business Resourcing Consultant',
+    subtitle: 'The right people and resources for your business',
+    text: 'We help you work out what your business needs and how to source it, so you can build a strong team without wasting time or money.',
+    points: ['Workforce and resource planning', 'Recruitment and staffing support', 'Contractors and outsourced resources', 'Cost-effective resourcing plans'],
   },
 ]
 
@@ -58,27 +42,27 @@ export const strip = [
 
 export const steps = [
   { n: '01', title: 'Message us', text: 'WhatsApp, call or fill in the form with what you need.' },
-  { n: '02', title: 'We review your case', text: 'We check your licence, vehicle or platform situation.' },
-  { n: '03', title: 'Clear options', text: 'You get honest advice and a clear price, no pressure.' },
-  { n: '04', title: 'We get it done', text: 'We handle the paperwork and keep you updated.' },
+  { n: '02', title: 'We review your needs', text: 'We look at your business, your risks and your goals.' },
+  { n: '03', title: 'Clear recommendations', text: 'You get honest advice and a clear plan, with no pressure.' },
+  { n: '04', title: 'We support you', text: 'We stay with you as your needs change.' },
 ]
 
 export const faqs = [
   {
-    q: 'Can you arrange car insurance if I hold a foreign or provisional licence?',
-    a: 'We work with partners who accept many licence types. Message us your licence details and we will look at the options available to you.',
+    q: 'What does insurance advisory involve?',
+    a: 'We review your situation, explain the cover you need and help you compare options through trusted insurance partners. We can also review policies you already have.',
   },
   {
-    q: 'What is a CBT and do I need one?',
-    a: 'Compulsory Basic Training (CBT) is required before riding a moped or motorbike on UK roads as a learner. Contact us to book a session.',
+    q: 'I am starting a new business. How can you help?',
+    a: 'We guide you through the key early decisions, including planning, costs, risks and insurance, so you start on a solid footing.',
   },
   {
-    q: 'What does Uber conversion involve?',
-    a: 'It means changing your delivery or ride account, for example from cycle to motorbike or car. We guide you through the documents and steps required.',
+    q: 'What is business resourcing consultancy?',
+    a: 'We help you plan the people and resources your business needs, then support you in sourcing them through recruitment, contractors or outsourced help.',
   },
   {
-    q: 'Can you help me appeal a speeding camera ticket?',
-    a: 'Yes. Our appeal writers review your notice and prepare your appeal. We cannot guarantee an outcome, but we will tell you honestly whether it is worth appealing.',
+    q: 'Is the first conversation free?',
+    a: 'Message us on WhatsApp or send the form and we will discuss your needs and explain how we can help, including any costs, before you commit.',
   },
   {
     q: 'How quickly will you reply?',

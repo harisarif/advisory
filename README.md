@@ -1,7 +1,6 @@
 # Cutting Edge Advisory Ltd – Website (React + Vite)
 
-Insurance consultancy website: cheap car insurance (all licence types), CBT for motorbike riders,
-Uber / Deliveroo / Just Eat conversion, speeding ticket appeals and platform issue support.
+Advisory website: insurance advisory, new business advisory and business resourcing consultancy.
 
 **Pages:** Home, Services, About, Contact. A floating WhatsApp button appears on every page.
 

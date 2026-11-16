@@ -7,8 +7,8 @@ export default function Services() {
       <section className="page-head">
         <div className="container">
           <span className="eyebrow">Our services</span>
-          <h1>Everything you need to keep moving</h1>
-          <p>Insurance, training, platform conversions and appeals, all handled by one friendly team.</p>
+          <h1>Advice to protect and grow your business</h1>
+          <p>Insurance advisory, new business advisory and business resourcing, all from one team.</p>
         </div>
       </section>
       <section className="section">

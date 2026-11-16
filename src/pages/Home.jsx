@@ -14,16 +14,16 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-inner">
           <div>
-            <span className="pill">Insurance consultancy</span>
+            <span className="pill">Insurance &amp; business advisory</span>
             <h1>
-              Smart solutions for <em>smarter driving.</em>
+              Smart advice for <em>smarter business.</em>
             </h1>
             <p>
-              {company.name} helps drivers and riders with affordable car insurance, CBT training,
-              platform conversions and speeding ticket appeals. {company.tagline}
+              {company.name} offers insurance advisory, new business advisory and business
+              resourcing consultancy. {company.tagline}
             </p>
             <div className="hero-cta">
-              <a href={waLink('Hello, I would like a car insurance quote.')} target="_blank" rel="noreferrer" className="btn btn-gold">
+              <a href={waLink('Hello, I would like some advice.')} target="_blank" rel="noreferrer" className="btn btn-gold">
                 <Icon name="whatsapp" size={20} /> WhatsApp {company.phoneDisplay}
               </a>
               <Link to="/services" className="btn btn-ghost">View our services</Link>
@@ -48,12 +48,12 @@ export default function Home() {
         <div className="container">
           <div className="feature">
             <div className="feature-body">
-              <span className="ribbon">Our top service</span>
+              <span className="ribbon">Our core service</span>
               <div className="feature-title">
-                <span className="shield"><Icon name="car" size={44} /></span>
+                <span className="shield"><Icon name="shield" size={44} /></span>
                 <div>
-                  <h2>Cheap car <span className="gold">insurance</span></h2>
-                  <span className="white-pill">With all kinds of licences</span>
+                  <h2>Insurance <span className="gold">advisory</span></h2>
+                  <span className="white-pill">Independent expert guidance</span>
                 </div>
               </div>
               <ul className="ticks light">
@@ -65,8 +65,8 @@ export default function Home() {
                 {top.badges.map((b) => <span key={b}>{b}</span>)}
               </div>
               <div className="hero-cta">
-                <a href={waLink('Hello, I would like a car insurance quote.')} target="_blank" rel="noreferrer" className="btn btn-gold">
-                  <Icon name="whatsapp" size={20} /> Get a quote on WhatsApp
+                <a href={waLink('Hello, I would like advice on insurance.')} target="_blank" rel="noreferrer" className="btn btn-gold">
+                  <Icon name="whatsapp" size={20} /> Ask us on WhatsApp
                 </a>
                 <Link to="/contact" state={{ service: top.title }} className="btn btn-ghost">Request a call back</Link>
               </div>
@@ -80,7 +80,7 @@ export default function Home() {
           <div className="section-head">
             <span className="eyebrow">Our services</span>
             <h2>How we can help you</h2>
-            <p className="muted">From insurance to platform support, we handle the paperwork so you can get on the road.</p>
+            <p className="muted">Practical advice for protecting, starting and resourcing your business.</p>
           </div>
           <div className="grid grid-2">
             {others.map((s) => <ServiceCard key={s.id} service={s} />)}
